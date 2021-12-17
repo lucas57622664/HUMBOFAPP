@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <HISTORY saga-version="2.3.1">
+    <MODULE library="shapes_polygons" id="1" name="Polygon Centroids">
+      <OPTION type="boolean" id="METHOD" name="Centroids for each part">TRUE</OPTION>
+      <INPUT type="shapes" id="POLYGONS" name="Polygons">
+        <FILE>/home/matias/PROJECTS/36_Bofedales2/99_Papers/01_LOA/shp/peatlands_loa.shp</FILE>
+      </INPUT>
+      <OUTPUT type="shapes" id="CENTROIDS" name="Centroids">peatlands_loa</OUTPUT>
+    </MODULE>
+  </HISTORY>
+  <SOURCE>
+    <FILE></FILE>
+    <DATABASE>
+      <FIELDS>
+        <FIELD TYPE="LONGINT">OID_</FIELD>
+        <FIELD TYPE="LONGINT">Area_m2</FIELD>
+        <FIELD TYPE="DOUBLE">Area_ha</FIELD>
+        <FIELD TYPE="STRING">Comuna</FIELD>
+        <FIELD TYPE="STRING">Region</FIELD>
+        <FIELD TYPE="STRING">Pais</FIELD>
+        <FIELD TYPE="STRING">AUC</FIELD>
+        <FIELD TYPE="DOUBLE">AUC_com</FIELD>
+      </FIELDS>
+    </DATABASE>
+    <PROJECTION>
+      <OGC_WKT>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]]</OGC_WKT>
+      <PROJ4>+proj=longlat +a=6378137.000000 +b=6356752.314245 +no_defs</PROJ4>
+      <EPSG>-1</EPSG>
+    </PROJECTION>
+  </SOURCE>
+  <DESCRIPTION></DESCRIPTION>
+</SAGA_METADATA>
